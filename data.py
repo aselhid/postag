@@ -1,9 +1,9 @@
 import csv
 import json
+import io
 # Counting
 
 data = {
-    "corpus": {},
     "tags": {},
     "transition": {}
 }
@@ -22,25 +22,19 @@ with open('training-data.tsv') as training_data:
         transition = f'{last_tag}-{tag}'
         last_tag = tag
 
-        if token in data["corpus"]:
-            data["corpus"][token]["count"] += 1
-        else:
-            token_data = {
-                "count": 1,
-                "tags": {}
-            }
-
-            data["corpus"][token] = token_data
-
-        if tag in data["corpus"][token]["tags"]:
-            data["corpus"][token]["tags"][tag] += 1
-        else:
-            data["corpus"][token]["tags"][tag] = 1
-
         if tag in data["tags"]:
-            data["tags"][tag] += 1
+            data["tags"][tag]["count"] += 1
         else:
-            data["tags"][tag] = 1
+            elem = {
+                "count": 1,
+                "type": {}
+            }
+            data["tags"][tag] = elem
+
+        if token in data["tags"][tag]["type"]:
+            data["tags"][tag]["type"][token] += 1
+        else:
+            data["tags"][tag]["type"][token] = 1
 
         if transition in data["transition"]:
             data["transition"][transition] += 1
@@ -48,5 +42,5 @@ with open('training-data.tsv') as training_data:
             data["transition"][transition] = 1
 
 
-with open('training-data.json', 'w') as training_data_json:
-    json.dump(data, training_data_json)
+with io.open('training-data-2.json', 'w', encoding="utf8") as training_data_json:
+    json.dump(data, training_data_json, ensure_ascii=False)

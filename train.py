@@ -1,10 +1,19 @@
-# import json
-# from pomegranate import *
+import json
+from pomegranate import *
+import io
 
-# data = {}
-# with open('training-data.json', 'r') as training_data:
-#     data = json.load(training_data)
+data = {}
+with io.open('training-data-2.json', 'r', encoding='utf-8-sig') as training_data:
+    data = json.load(training_data)
 
-# emissions = []
-# for token in data["corpus"]:
-#     emission =
+states = {}
+for tag in data["tags"]:
+    distribution = {}
+
+    for tipe in data["tags"][tag]["type"]:
+        distribution[tipe] = data["tags"][tag]["type"][tipe] / \
+            data["tags"][tag]["count"]
+
+    states[tag] = State(DiscreteDistribution(distribution), name=tag)
+
+model = HiddenMarkovModel('pos-tag-nlp')
