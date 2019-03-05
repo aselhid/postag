@@ -18,7 +18,7 @@ for tag in data["tags"]:
 
     states[tag] = State(DiscreteDistribution(distribution), name=tag)
 
-model = HiddenMarkovModel('pos-tag-nlp')
+model = HiddenMarkovModel('pos-tag-nlp', start=states['<S>'])
 model.add_states(list(states.values()))
 for transition in data['transitions']:
     tag_a, tag_b = transition.split("-")
