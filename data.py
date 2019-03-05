@@ -4,7 +4,11 @@ import io
 # Counting
 
 data = {
-    "tags": {},
+    "tags": {
+        '<S>': {
+            "count": 1
+        }
+    },
     "transition": {}
 }
 
@@ -15,6 +19,7 @@ with open('training-data.tsv') as training_data:
     for row in reader:
         if len(row) == 0:
             last_tag = '<S>'
+            data['tags'][last_tag]['count'] += 1
             continue
 
         token = row[0].lower()
