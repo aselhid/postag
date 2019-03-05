@@ -22,7 +22,10 @@ model = HiddenMarkovModel('pos-tag-nlp', start=states['<S>'])
 model.add_states(list(states.values()))
 for transition in data['transitions']:
     tag_a, tag_b = transition.split("-")
-    state_a = states[tag_a]
+    if tag_a == '<S>':
+        state_a = model.start
+    else:
+        state_a = states[tag_a]
     state_b = states[tag_b]
     transition_prob = data['transitions'][transition] / \
         data['tags'][tag_a]['count']
