@@ -9,7 +9,7 @@ data = {
             "count": 1
         }
     },
-    "transition": {}
+    "transitions": {}
 }
 
 with open('training-data.tsv') as training_data:
@@ -42,9 +42,9 @@ with open('training-data.tsv') as training_data:
             data["tags"][tag]["type"][token] = 1
 
         if transition in data["transition"]:
-            data["transition"][transition] += 1
+            data["transitions"][transition] += 1
         else:
-            data["transition"][transition] = 1
+            data["transitions"][transition] = 1
 
 
 with io.open('training-data-2.json', 'w', encoding="utf8") as training_data_json:

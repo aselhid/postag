@@ -1,6 +1,7 @@
 import json
-from pomegranate import *
 import io
+import matplotlib.pyplot as plt
+from pomegranate import *
 
 data = {}
 with io.open('training-data-2.json', 'r', encoding='utf-8-sig') as training_data:
@@ -11,8 +12,6 @@ for tag in data["tags"]:
     distribution = {}
 
     for tipe in data["tags"][tag]["type"]:
-        if tipe == '<S>':
-            continue
 
         distribution[tipe] = data["tags"][tag]["type"][tipe] / \
             data["tags"][tag]["count"]
@@ -20,14 +19,16 @@ for tag in data["tags"]:
     states[tag] = State(DiscreteDistribution(distribution), name=tag)
 
 model = HiddenMarkovModel('pos-tag-nlp')
-model.add_states(states.values())
+model.add_states(list(states.values()))
 for transition in data['transitions']:
     tag_a, tag_b = transition.split("-")
     state_a = states[tag_a]
     state_b = states[tag_b]
-    transition_prob = data['transitions'][transition] / data['tags'][tag_a]['count']
+    transition_prob = data['transitions'][transition] / \
+        data['tags'][tag_a]['count']
 
     model.add_transition(state_a, state_b, transition_prob)
 
 model.bake()
-print(model)
+model.plot()
+plt.show()
