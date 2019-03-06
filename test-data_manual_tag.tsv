@@ -5,16 +5,16 @@ dikerahkan	VB
 pemkot	NNP
 berbadan	VB
 besar	JJ
-, 
+,	Z
 berekor	VB
 panjang	JJ
-, 
+,	Z
 dan	CC
 memiliki	VB
 wajah	NN
 berwarna	VB
 hitam	JJ
-. 
+.	Z
 
 Kedua	CD
 orang	NND
@@ -31,178 +31,178 @@ sangat	RB
 kaya	JJ
 di	IN
 Amerika	NNP
-agar
-menyumbangkan
-separuh
-kekayaan
-mereka
-. 
+agar	SC
+menyumbangkan	VB
+separuh	CD
+kekayaan	NN
+mereka	PRP
+.	Z
 
-Hanya
-butuh
-enam
-tahun
-bagi
-Zuckerberg
-untuk
-bisa
-mencapai
-kesuksesan
-seperti
-sekarang
-ini
-, 
-setelah
-sebelum
--nya
-dia
-meluncurkan
-situs
-ini
-saat
-masih
-duduk
-sebagai
-mahasiswa
-di
-Universitas
-Harvard
-. 
+Hanya	RB
+butuh	VB
+enam	CD
+tahun	NND
+bagi	IN
+Zuckerberg	NNP
+untuk	IN
+bisa	VB
+mencapai	VB
+kesuksesan	NN
+seperti	SC
+sekarang	NN
+ini	PR
+,	Z
+setelah	SC
+sebelum	SC
+-nya	RP
+dia	PRP
+meluncurkan	VB
+situs	NN
+ini	PR
+saat	SC
+masih	RB
+duduk	VB
+sebagai	IN
+mahasiswa	NN
+di	IN
+Universitas	NN
+Harvard	NNP
+.	Z
 
-Jamrud
-itu
-akhirnya
-sampai
-ke
-Amerika
-, 
-meskipun
-setibanya
-di
-Amerika
-tidak
-jelas
-siapa
-pemilik
--nya
-. 
+Jamrud	NNP
+itu	PR
+akhirnya	ADV
+sampai	VB
+ke	IN
+Amerika	NNP
+,	Z
+meskipun	SC
+setibanya	X
+di	in
+Amerika	NNP
+tidak	NEG
+jelas	JJ
+siapa	SC
+pemilik	NN
+-nya	RP
+.	Z
 
-Sejumlah
-surat kabar
-Brasil
-melaporkan
-Tiririca
-- 
-sama
-seperti
-satu
-dari
-sepuluh
-warga
-Brasil
-buta aksara
-. 
+Sejumlah	CD
+surat kabar	NN
+Brasil	NNP
+melaporkan	VB
+Tiririca	NNP
+-	Z
+sama	JJ
+seperti	SC
+satu	CD
+dari	IN
+sepuluh	CD
+warga	NN
+Brasil	NNP
+buta aksara	JJ
+.	Z
 
-Universitas
-Indonesia 
-adalah 
-kampus 
-modern
-,
-komprehensif
-,
-terbuka
-,
-multibudaya
-,
-dan
-humanis
-yang
-mencakup
-disiplin
-ilmu
-yang
-luas
-.
+Universitas	NN
+Indonesia	NNP
+adalah	VB
+kampus	NN
+modern	JJ
+,	Z
+komprehensif	JJ
+,	Z
+terbuka	VB
+,	Z
+multibudaya	JJ
+,	Z
+dan	CC
+humanis	JJ
+yang	SC
+mencakup	VB
+disiplin	NN
+ilmu	NN
+yang	SC
+luas	JJ
+.	Z
 
-Di
-Korea
-Selatan
-, 
-Wings
-menjadi
-album
-terlaris
-di
-sejarah
-Gaon
-Album
-Chart
-pada
-waktu
-itu
-.
+Di	IN
+Korea	NNP
+Selatan	NN
+,	Z
+Wings	NNP
+menjadi	VB
+album	NN
+terlaris	JJ
+di	IN
+sejarah	NN
+Gaon	NNP
+Album	NNP
+Chart	NNP
+pada	IN
+waktu	NN
+itu	NND
+.	Z
 
-Google
-didirikan
-oleh
-Larry
-Page
-dan
-Sergey
-Brin
-saat
-masih
-mahasiswa 
-Ph.D. 
-di 
-Universitas
-Stanford
-.
+Google	NNP
+didirikan	VB
+oleh	SC
+Larry	NNP
+Page	NNP
+dan	CC
+Sergey	NNP
+Brin	NNP
+saat	SC
+masih	RB
+mahasiswa	NN
+Ph.D.	NN
+di	IN
+Universitas	NN
+Stanford	NNP
+.	Z
 
-Hasil
-pemantauan
-menunjukkan
-periode
-kemarau
-pertama
-akan
-dialami
-pesisir
-Sumatera
-bagian
-tengah
-dan
-Kalimantan
-bagian
-barat
-.
+Hasil	NN
+pemantauan	VB
+menunjukkan	VB
+periode	NN
+kemarau	JJ
+pertama	OD
+akan	ADV
+dialami	VB
+pesisir	NN
+Sumatera	NNP
+bagian	NN
+tengah	NN
+dan	CC
+Kalimantan	NNP
+bagian	NN
+barat	NN
+.	Z
 
-Setiap
-orang
-dilarang
-menjadikan
-orang
-lain
-sebagai
-objek
-atau
-model
-yang
-mengandung
-muatan
-pornografi
-.
+Setiap	CD
+orang	NND
+dilarang	VB
+menjadikan	VB
+orang	NN
+lain	JJ
+sebagai	IN
+objek	NN
+atau	CC
+model	NN
+yang	SC
+mengandung	VB
+muatan	NN
+pornografi	NN
+.	Z
 
-Jumlah
-katak
-asli
-Indonesia
-yang
-tercatat
-saat
-ini
-ada
-407
-spesies
-.
+Jumlah	NN
+katak	NN
+asli	JJ
+Indonesia	NNP
+yang	SC
+tercatat	VB
+saat	NN
+ini	NND
+ada	VB
+407	CD
+spesies	NN
+.	Z
