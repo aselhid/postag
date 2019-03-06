@@ -1,0 +1,44 @@
+smoothed?jenis monyet yang dikerahkan pemkot berbadan besar , berekor panjang , dan memiliki wajah berwarna hitam .
+map : NND NN SC VB NN VB JJ Z SC JJ Z CC VB NN VB JJ Z
+viterbi : <S> NND NN SC VB NN VB JJ Z RB JJ Z CC VB NN VB JJ Z
+
+kedua orang terkaya dunia itu sudah berhasil membujuk banyak orang yang sangat kaya di amerika agar menyumbangkan separuh kekayaan mereka .
+map : CD NN JJ NN PR MD VB VB CD NN SC RB JJ IN NNP SC VB CD NN PRP Z
+viterbi : <S> CD NN JJ NN PR MD VB VB CD NN SC RB JJ IN NNP SC VB CD NN PRP Z
+
+hanya butuh enam tahun bagi zuckerberg untuk bisa mencapai kesuksesan seperti sekarang ini , setelah sebelum -nya dia meluncurkan situs ini saat masih duduk sebagai mahasiswa di universitas harvard .
+map : RB VB CD NN IN NNP SC MD VB NN IN NN PR Z SC SC PRP PRP VB NN PR NN MD VB IN NN IN NNP NNP Z
+viterbi : <S> RB VB CD NN IN NNP SC MD VB NN IN NN PR Z SC SC PRP PRP VB NN PR NN MD VB IN NN IN NNP NNP Z
+
+jamrud itu akhirnya sampai ke amerika , meskipun setibanya di amerika tidak jelas siapa pemilik -nya .
+map : NN PR RB SC IN NNP Z SC VB IN NNP NEG VB WH NN PRP Z
+viterbi : <S> NN PR RB SC IN NNP Z SC VB IN NNP NEG VB WH NN PRP Z
+
+sejumlah surat kabar brasil melaporkan tiririca - sama seperti satu dari sepuluh warga brasil buta aksara .
+map : CD NN NNP VB NNP Z JJ IN CD IN CD NN NNP JJ Z
+viterbi : <S> CD NN NNP VB NNP Z JJ IN CD IN CD NN NNP JJ Z
+
+universitas indonesia adalah kampus modern , komprehensif , terbuka , multibudaya , dan humanis yang mencakup disiplin ilmu yang luas .
+map : NNP NNP VB NN JJ Z JJ Z VB Z UH Z CC WH SC VB NN NN SC JJ Z
+viterbi : <S> NNP NNP VB NN JJ Z JJ Z VB Z UH Z CC WH SC VB NN NN SC JJ Z
+
+di korea selatan , wings menjadi album terlaris di sejarah gaon album chart pada waktu itu .
+map : IN NNP NNP Z SC VB WH RP IN NN PR RP RP IN NN PR Z
+viterbi : <S> IN NNP NNP Z SC VB WH RP IN NN FW FW FW IN NN PR Z
+
+google didirikan oleh larry page dan sergey brin saat masih mahasiswa ph.d. di universitas stanford .
+map : SC VB IN WH RP CC WH RP NN MD NN OD IN NN PR Z
+viterbi : <S> SC VB IN WH RP CC WH RP NN MD NN OD IN NN PR Z
+
+hasil pemantauan menunjukkan periode kemarau pertama akan dialami pesisir sumatera bagian tengah dan kalimantan bagian barat .
+map : NN NN VB NN X OD MD VB NN NNP NNP NNP CC NNP NNP NNP Z
+viterbi : <S> NN NN VB NN X OD MD VB NN NNP NNP NNP CC NNP NNP NNP Z
+
+setiap orang dilarang menjadikan orang lain sebagai objek atau model yang mengandung muatan pornografi .
+map : CD NN VB VB NN JJ IN NN CC NN SC VB NN NN Z
+viterbi : <S> CD NN VB VB NN JJ IN NN CC NN SC VB NN NN Z
+
+jumlah katak asli indonesia yang tercatat saat ini ada 407 spesies .
+map : NN RB JJ NNP SC VB NN PR VB DT NN Z
+viterbi : <S> NN RB JJ NNP SC VB NN PR VB DT NN Z
+

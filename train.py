@@ -5,14 +5,17 @@ import itertools
 import csv
 from pomegranate import *
 
+smoothed = True if input('smoothed?').lower() == 'y' else False     
+
+train_data_name = 'training-data-2_smoothed.json' if smoothed else 'training-data-2.json'
 data = {}
-with io.open('training-data-2.json', 'r', encoding='utf-8-sig') as training_data:
+with io.open(train_data_name, 'r', encoding='utf-8-sig') as training_data:
     data = json.load(training_data)
 
 unknowns = ['berekor', 'setibanya', 'multibudaya', 'humanis', 'wings', 'album', 'terlaris', 'gaon', 'album', 'chart', 'google', 'larry', 'page', 'sergey', 'brin', 'ph.d.', 'stanford', 'kemarau', 'katak', '407']
 states = {}
 for tag in data["tags"]:
-    distribution = {k: 0 for k in unknowns}
+    distribution = {k: 0 for k in unknowns} if not smoothed else {}
 
     for tipe in data["tags"][tag]["type"]:
 
