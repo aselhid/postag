@@ -1,0 +1,51 @@
+jenis monyet yang dikerahkan pemkot berbadan besar , berekor panjang , dan memiliki wajah berwarna hitam .
+Warning: Sequence is impossible.
+map : ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ??
+Warning : Sequence is impossible.
+
+kedua orang terkaya dunia itu sudah berhasil membujuk banyak orang yang sangat kaya di amerika agar menyumbangkan separuh kekayaan mereka .
+map : CD NN JJ NN PR MD VB VB CD NN SC RB JJ IN NNP SC VB CD NN PRP Z
+viterbi : <S> CD NN JJ NN PR MD VB VB CD NN SC RB JJ IN NNP SC VB CD NN PRP Z
+
+hanya butuh enam tahun bagi zuckerberg untuk bisa mencapai kesuksesan seperti sekarang ini , setelah sebelum -nya dia meluncurkan situs ini saat masih duduk sebagai mahasiswa di universitas harvard .
+map : RB VB CD NN IN NNP SC MD VB NN IN NN PR Z SC SC PRP PRP VB NN PR NN MD VB IN NN IN NNP NNP Z
+viterbi : <S> RB VB CD NN IN NNP SC MD VB NN IN NN PR Z SC SC PRP PRP VB NN PR NN MD VB IN NN IN NNP NNP Z
+
+jamrud itu akhirnya sampai ke amerika , meskipun setibanya di amerika tidak jelas siapa pemilik -nya .
+Warning: Sequence is impossible.
+map : ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ??
+Warning : Sequence is impossible.
+
+sejumlah surat kabar brasil melaporkan tiririca - sama seperti satu dari sepuluh warga brasil buta aksara .
+map : CD NN NNP VB NNP Z JJ IN CD IN CD NN NNP JJ Z
+viterbi : <S> CD NN NNP VB NNP Z JJ IN CD IN CD NN NNP JJ Z
+
+universitas indonesia adalah kampus modern , komprehensif , terbuka , multibudaya , dan humanis yang mencakup disiplin ilmu yang luas .
+Warning: Sequence is impossible.
+map : ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ??
+Warning : Sequence is impossible.
+
+di korea selatan , wings menjadi album terlaris di sejarah gaon album chart pada waktu itu .
+Warning: Sequence is impossible.
+map : ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ??
+Warning : Sequence is impossible.
+
+google didirikan oleh larry page dan sergey brin saat masih mahasiswa ph.d. di universitas stanford .
+Warning: Sequence is impossible.
+map : ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ??
+Warning : Sequence is impossible.
+
+hasil pemantauan menunjukkan periode kemarau pertama akan dialami pesisir sumatera bagian tengah dan kalimantan bagian barat .
+Warning: Sequence is impossible.
+map : ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ??
+Warning : Sequence is impossible.
+
+setiap orang dilarang menjadikan orang lain sebagai objek atau model yang mengandung muatan pornografi .
+map : CD NN VB VB NN JJ IN NN CC NN SC VB NN NN Z
+viterbi : <S> CD NN VB VB NN JJ IN NN CC NN SC VB NN NN Z
+
+jumlah katak asli indonesia yang tercatat saat ini ada 407 spesies .
+Warning: Sequence is impossible.
+map : ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ??
+Warning : Sequence is impossible.
+
