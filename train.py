@@ -39,6 +39,8 @@ model.bake()
 # model.plot()
 # plt.show()
 
+# TESTING
+
 with open('test-data.tsv', 'r') as test_file:
     raw_test_data = csv.reader(test_file, delimiter='\t')
 
@@ -49,4 +51,12 @@ test_data = [list(y) + ['.'] for x, y in itertools.groupby(
     cleaned_data, lambda z: z == '.') if not x]
 
 for test in test_data:
-    print(model.predict(test))
+    try:
+        print(' '.join(test))
+        print('map :', ' '.join([model.states[i].name if i >= 0 else '??' for i in model.predict(test)]))
+        print('viterbi :', ' '.join([model.states[i].name for i in model.predict(test, algorithm='viterbi')]))
+    except:
+        print('Warning : Sequence is impossible.')
+
+    finally:
+        print()
