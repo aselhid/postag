@@ -38,3 +38,7 @@ else:
             else:
                 sentence += row[0] + " "
                 tags += row[1] + " "
+        print("Kalimat",counter)
+        print(sentence)
+        print("Manual tagging:",tags)
+        print('')
