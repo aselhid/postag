@@ -5,13 +5,24 @@ import itertools
 import csv
 from pomegranate import *
 
-smoothed = True if input('smoothed?').lower() == 'y' else False     
+smoothed = True if input('smoothed?').lower() == 'y' else False
+stemmed = True if input('stemmed?').lower() == 'y' else False
 
-train_data_name = 'training-data-2_smoothed.json' if smoothed else 'training-data-2.json'
+if smoothed:
+    if stemmed:
+        train_data_name = 'training-data-2-stemmed_smoothed.json'
+    else:
+        train_data_name = 'training-data-2_smoothed.json'
+else:
+    if stemmed:
+        train_data_name = 'training-data-2-stemmed.json'
+    else:
+        train_data_name = 'training-data-2.json'
+
+print("loading from",train_data_name)
 data = {}
 with io.open(train_data_name, 'r', encoding='utf-8-sig') as training_data:
     data = json.load(training_data)
-
 unknowns = ['berekor', 'setibanya', 'multibudaya', 'humanis', 'wings', 'album', 'terlaris', 'gaon', 'album', 'chart', 'google', 'larry', 'page', 'sergey', 'brin', 'ph.d.', 'stanford', 'kemarau', 'katak', '407']
 states = {}
 for tag in data["tags"]:
@@ -43,8 +54,8 @@ model.bake()
 # plt.show()
 
 # TESTING
-
-with open('test-data.tsv', 'r') as test_file:
+TEST_DATA = 'test-data-stemmed.tsv' if stemmed else 'test-data.tsv'
+with open(TEST_DATA, 'r') as test_file:
     raw_test_data = csv.reader(test_file, delimiter='\t')
 
     cleaned_data = [s.strip().lower()

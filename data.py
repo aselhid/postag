@@ -3,6 +3,10 @@ import json
 import io
 # Counting
 
+stem = True if input('stemmed?') == 'y' else False
+
+FILE_IN = 'training-data-stemmed.tsv' if stem else 'training-data.tsv'
+FILE_OUT = 'training-data-2-stemmed.json' if stem else 'training-data-2.json'
 data = {
     "tags": {
         '<S>': {
@@ -12,7 +16,7 @@ data = {
     "transitions": {}
 }
 
-with open('training-data.tsv') as training_data:
+with open(FILE_IN) as training_data:
     reader = csv.reader(training_data, delimiter='\t')
     last_tag = '<S>'
 
@@ -41,11 +45,11 @@ with open('training-data.tsv') as training_data:
         else:
             data["tags"][tag]["type"][token] = 1
 
-        if transition in data["transition"]:
+        if transition in data["transitions"]:
             data["transitions"][transition] += 1
         else:
             data["transitions"][transition] = 1
 
 
-with io.open('training-data-2.json', 'w', encoding="utf8") as training_data_json:
+with io.open(FILE_OUT, 'w', encoding="utf8") as training_data_json:
     json.dump(data, training_data_json, ensure_ascii=False)
