@@ -53,7 +53,10 @@ with open('test-data.tsv', 'r') as test_file:
 test_data = [list(y) + ['.'] for x, y in itertools.groupby(
     cleaned_data, lambda z: z == '.') if not x]
 
+counter = 1
 for test in test_data:
+    print('Kalimat',counter)
+    counter += 1
     try:
         print(' '.join(test))
         print('map :', ' '.join([model.states[i].name if i >= 0 else '??' for i in model.predict(test)]))
